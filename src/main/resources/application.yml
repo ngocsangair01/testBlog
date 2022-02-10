@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://ec2-52-205-3-3.compute-1.amazonaws.com:5432/df6luml2759l08
+    username: qcterqueivgjku
+    password: 774fce0dfbe3a905915a7c6bf265e3ea19d9c4fe61194efe4634f910e1046cca
+  data:
+    cassandra:
+      schema-action: create_if_not_exists
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL92Dialect
+
+
